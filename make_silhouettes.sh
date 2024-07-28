@@ -52,7 +52,7 @@ for file in "$SRC_DIR"/*.png; do
         # Convert the image: replace non-transparent pixels with black and preserve transparency
         convert "$file" \
             -alpha extract -background black -alpha shape \
-            "$DST_DIR/$base_name"
+            -trim "$DST_DIR/$base_name"
     fi
 done
 

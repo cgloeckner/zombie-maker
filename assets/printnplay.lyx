@@ -1,0 +1,946 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage{color,listings} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{yhmath}
+\usepackage{xcolor}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{pdflscape}
+\usepackage{layouts}
+
+\usepackage{pgf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,angles,shapes,quotes,babel}
+\usepgfplotslibrary{fillbetween}
+
+\graphicspath{{img/}}
+\usepackage{calc}
+\usepackage{intcalc}
+\usepackage{ifthen}
+\usepackage{transparent}
+
+\usepackage{sansmathfonts}
+
+\usepackage{romanbar}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0cm
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+markerEinzel}[2] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[dotted] (0, 0) circle (1.4cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+clip (0, 0) circle (1.4cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node at (0, 0) {
+\backslash
+includegraphics[width=#1, angle=0]{#2.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+marker}[4] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}[xshift=#1, yshift=#2]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+markerEinzel{#3}{#4}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+markerGrossEinzel}[2] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[dotted] (0, 0) circle (2.8cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+clip (0, 0) circle (2.8cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node at (0, 0) {
+\backslash
+includegraphics[width=#1, angle=0]{#2.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+markerGross}[4] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}[xshift=#1, yshift=#2]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+markerGrossEinzel{#3}{#4}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+markerGrossEinzelMirror}[2] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[dotted, fill=white] (0, 0) circle (2.8cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+clip (0, 0) circle (2.8cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node at (0, 0) {
+\backslash
+reflectbox{
+\backslash
+includegraphics[width=#1, angle=0]{#2.png}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+markerGrossMirror}[4] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}[xshift=#1, yshift=#2]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+markerGrossEinzelMirror{#3}{#4}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+figurEinzel}[2] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[below] (imgU) at (0, 0) {
+\backslash
+includegraphics[height=28mm, angle=0]{silhouettes/walker#2.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[above] (imgO) at (0, 0) {
+\backslash
+reflectbox{
+\backslash
+includegraphics[height=28mm, angle=180]{silhouettes/walker#2.png}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+clip (imgU.south) to ++(-13mm, -13mm) rectangle ++(26mm, 13mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[help lines] (imgU.south) circle (12mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+clip (imgO.north) to ++(-13mm, 13mm) rectangle ++(26mm, -13mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[help lines] (imgO.north) circle (12mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[help lines] (imgO.north) to ++(-12mm, 0) rectangle ++(24mm, -30.5mm)
+ rectangle ++(-24mm, -30.5mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+figur}[4] {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{scope}[xshift=#1, yshift=#2]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figurEinzel{#3}{#4}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+foreach 
+\backslash
+y in {0, 10cm} {
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{0cm}{
+\backslash
+y}{4cm}{01}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{2.5cm}{
+\backslash
+y}{4cm}{02}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{5cm}{
+\backslash
+y}{4cm}{03}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{7.5cm}{
+\backslash
+y}{4cm}{04}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{10cm}{
+\backslash
+y}{4cm}{10}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{12.5cm}{
+\backslash
+y}{4cm}{11}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{15cm}{
+\backslash
+y}{4cm}{12}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{17.5cm}{
+\backslash
+y}{4cm}{13}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{20cm}{
+\backslash
+y}{4cm}{14}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+figur{22.5cm}{
+\backslash
+y}{4cm}{15}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+foreach 
+\backslash
+y in {0, 1, 2, ..., 8} {
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+begin{scope}[yshift=
+\backslash
+y * 3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{0cm}{0cm}{2cm}{heart}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{3cm}{0cm}{2cm}{heart}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{6cm}{0cm}{2cm}{luck}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{9cm}{0cm}{2cm}{luck}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{12cm}{0cm}{2cm}{luck}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{15cm}{0cm}{2cm}{luck}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+foreach 
+\backslash
+y in {0, 1, ..., 6} {
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+begin{scope}[yshift=
+\backslash
+y * 3.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+marker{0cm}{0cm}{2cm}{rodent}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{4.25cm}{1cm}{5cm}{spider}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{4.25cm}{7cm}{5cm}{bird}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{4.25cm}{13.5cm}{5cm}{bird}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{4.25cm}{20cm}{6cm}{snake-body}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{10cm}{1cm}{6cm}{snake-head}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{10cm}{7cm}{6cm}{snake-body}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{10cm}{13.5cm}{6cm}{snake-body}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{10cm}{20cm}{6cm}{snake-body}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{15.75cm}{1cm}{6cm}{cat-head}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{15.75cm}{7cm}{6cm}{cat-paw}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGrossMirror{15.75cm}{13.5cm}{6cm}{cat-paw}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+markerGross{15.75cm}{20cm}{6cm}{cat-tail}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
