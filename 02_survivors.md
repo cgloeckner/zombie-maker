@@ -26,7 +26,3 @@ Each player starts with a HERO. Fresh HEROES start with two ABILITIES.
 18. **MEDICAL** p. 34
 19. **RAVAGER** p. 35
 20. **SNIPER** p. 36
-
-
-## Persisting damage
-In opposition of p. 18, damage to a HERO, ELITE or TERRAIN is **not cleared** at the end of a round, so be careful!

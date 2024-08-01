@@ -485,27 +485,9 @@ end{scope}
 
 	
 \backslash
-draw[help lines] (imgO.north)
-\end_layout
-
-\begin_layout Plain Layout
-
-		to ++(12mm, 0) to ++(-7mm, 7mm) to ++(-11mm, 0) to ++(-7mm, -7mm)
-\end_layout
-
-\begin_layout Plain Layout
-
-		rectangle ++(25mm, -30.5mm)
-\end_layout
-
-\begin_layout Plain Layout
-
-		rectangle ++(-25mm, -30.5mm)
-\end_layout
-
-\begin_layout Plain Layout
-
-		to ++(7mm, -7mm) to ++(11mm, 0) to ++(7mm, 7mm);
+draw[help lines] (imgO.north) to ++(-12mm, 0) rectangle ++(24mm, -30.5mm)
+ rectangle ++(-24mm, -30.5mm) to ++(5mm, -5mm) to ++(14mm, 0) to ++(5mm,
+ 5mm);
 \end_layout
 
 \begin_layout Plain Layout
