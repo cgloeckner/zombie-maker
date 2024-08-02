@@ -32,3 +32,11 @@ Each player starts with a HERO. Fresh HEROES start with two ABILITIES.
 10. **SCAVENGER**: Double the amount of LOOT you gain.
 11. **MEDIC**: Allies in CONTACT ignore 1 HIT when attacked.
 12. **LEADER**: Allies within 1 pencil gain 1D for their attacks.
+
+# LOOT
+
+wip
+
+# SCENARIOS
+
+wip
