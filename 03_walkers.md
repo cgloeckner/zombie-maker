@@ -1,6 +1,6 @@
 # Walkers
 
-## Just REGULAR zombies
+## REGULAR zombies
 
 - Walkers are just REGULAR FORCES with 1-6 MEMBERS.
 - They bite, thus are a MELEE FORCE.
@@ -14,7 +14,7 @@
 
 ## Roaming around
 
-If directionless, each FORCE will ROAM: Roll 1d12 as clock die to indicate direction. ROAMING walkers move 1/2 pencil
+If directionless, each FORCE will ROAM: Roll 1d12 as clock die to indicate direction.
 
 ## Clustering
 

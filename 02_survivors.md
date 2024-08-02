@@ -4,25 +4,17 @@
 
 Each player starts with a HERO. Fresh HEROES start with two ABILITIES.
 
-## d20 ABILITIES
+## d12 ABILITIES
 
-1. **ARCHER**: Do RANGED attacks without noise
-2. **ARMOR** p. 27
-3. **BERZERK** p 28
-4. **BANNER** p. 28
-5. **BLADES** p. 29
-6. **DEMOLISH** on p. 30
-7. **COMMENDATION** p. 30
-8. **CLIMB** p. 30
-9. **DUELIST** p. 31
-10. **ESCAPE** p. 31
-11. **FAST** p. 31
-12. **FLARE** p. 32
-13. **FURY** p. 32
-14. **GUNSLINGER** p. 32
-15. **HIDDEN PASSAGE** p. 33
-16. **MARKSMAN** p. 33
-17. **PHASE FIELD** p. 34
-18. **MEDICAL** p. 34
-19. **RAVAGER** p. 35
-20. **SNIPER** p. 36
+1. **SCOUT**: You can DASH without causing any noise.
+2. **NAVIGATOR**: You can DASH up to 3 pencils.
+3. **DISGUISED**: You look like a WALKER until you attack or DASH.
+4. **SLICER**: Do another MELEE attack if all dice HIT.
+5. **BASHER**: Reroll MISSES when attacking in MELEE.
+6. **BLOOD RAGE**: You can do your movement after a MELEE attack if any dice hit.
+7. **GUNSLINGER**: Distribute HITS between any targets within RANGE.
+8. **SHARRPSHOOTER**: Your RANGED attacks have 2 pencils RANGE.
+9. **ARCHER**: Your RANGED attacks do not cause any noise.
+10. **SCAVENGER**: Double the amount of LOOT you gain.
+11. **MEDIC**: Allies in CONTACT ignore 1 HIT when attacked.
+12. **LEADER**: Allies within 1 pencil gain 1D for their attacks.
