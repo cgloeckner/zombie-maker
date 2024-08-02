@@ -1,6 +1,20 @@
-# Survivors
+# Zombie | Maker
 
-## Be a HERO
+This is meant as a RPG-mod for the tabletop wargaming system WAR | MAKER by Runehammer Games. All page references to [WAR MAKER 2.0 Core Rules](https://www.runehammer.online/_files/ugd/62a178_f80cc2af9a5e44b5bff5bb6adf7d4eaa.pdf) freely avaiable on [www.runehammer.online](https://runehammer.online).
+
+# Walkers
+
+Groups of walkers are REGULAR FORCES with a random number of MEMBERS.
+
+## Walker (Dis-)Abilities
+
+- **BITE**: MELEE FORCE with CARNIVORE ABILITY (p. 30)
+- **SLOW**: cannot DASH
+- **ATTRACTED**: within 2 pencils
+- **ROAM**: random direction (e.g. d12 clock dice), roam together if in CONTACT
+- **SPAWN**: each few ROUNDS
+
+# Survivors
 
 Each player starts with a HERO. Fresh HEROES start with two ABILITIES.
 
